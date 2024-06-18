@@ -63,3 +63,46 @@ let nombre_a_virgule = -5.32;
 let unBooleen = false; // -- true
 
 // -- 5. Les Constantes
+/* La déclaration const permet de créer une constante accessible uniquement en lecture. Contrairement à une variable sa valeur ne peut plus être modifiée par réaffectation plus bas dans le code.
+ Une constante ne peut pas être déclarée à nouveau dans le même script.
+*/
+
+// -- Par convention les constantes sont en majuscules
+const PAYS = "France"; // string
+const AN = '2020'; // string
+const BIRTH = 2020; // nombre
+
+// -- 6. typeof permet de connaître le type de ma variable
+//console.log(annee);
+//console.log(typeof annee);
+//console.log(vacances);
+//console.log(typeof vacances + " c'est le type de : " + vacances);
+
+
+let unChiffre = "12";
+console.log(unChiffre);
+console.log(typeof unChiffre);
+
+// STRING => NUMBER
+unChiffre = parseInt(unChiffre);
+console.log(unChiffre);
+console.log(typeof unChiffre);
+
+// je ré-affecte une valeur
+unChiffre = "12.22";
+console.log(unChiffre);
+console.log(typeof unChiffre);
+
+// STRING => FLOAT
+unChiffre = parseFloat(unChiffre);
+console.log(unChiffre);
+console.log(typeof unChiffre);
+
+// NUMBER => STRING
+let nb_en_lettres = 258;
+console.log(nb_en_lettres);
+console.log(typeof nb_en_lettres);
+
+nb_en_lettres = nb_en_lettres.toString();
+console.log(nb_en_lettres);
+console.log(typeof nb_en_lettres);
